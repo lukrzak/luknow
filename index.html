@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Sztuka Programowania</title>
+        <link rel="icon" href="ikona.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="description" content="Jest to strona poświęcona dla osób zaczynających swoją przygodę z programowaniem.">
+        <meta name="keywords" content="programowanie, java, python, c++">
+        <meta name="author" content="Łukasz Nowakowski, Konrad Bryłowski">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+    <body class="text-monospace">
+        <div id="begin">&nbsp;</div>
+            <header>
+                <nav class="nav">
+                    <img src="bitmap.png" style="width: 130px; height: 100px;" alt="logo">
+                    <a class="nav-link active przycisk" href="" style="padding-top: 35px;" onclick="powitanie(-8)"><h4>Rozpocznij</h4></a>
+                    <a class="nav-link active przycisk" href="#menu" style="padding-top: 35px;"><h4>Menu</h4></a>
+                    <a class="nav-link active przycisk" href="#footer" style="padding-top: 35px;"><h4>Dołącz do społeczności</h4></a>
+                </nav>
+            </header>
+            <div class="main">
+<!-- Karty -->
+                <div aria-live="polite" aria-atomic="true">
+                    <div class="toast bg-dark helper" style="position: fixed;"  data-autohide="false">
+                        <div class="toast-header" style="background-color: black;">
+                            <strong class="mr-auto">Sztuka Programowania</strong>
+                            <small>Łukasz Nowakowski &amp; Konrad Bryłowski</small>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close" style="color: white">
+                                <span aria-hidden="true" class="przycisk">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            <p id="powitanie">Witaj na stronie Sztuka Programowania. Jestem Twoim asystentem i pomogę Ci w nawigacji na stronie.</p>
+                            <button type="button" class="btn btn-light" style="float: right; margin-bottom: 15px;" onclick="powitanie(0)" id="powitaniePrzycisk"><a class="przycisk">Dalej</a></button>
+                        </div>
+                    </div>
+                </div>
+            <div class="kontent">
+                
+                <div id="slajder" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                         <img src="slajder1.png" class="d-block w-100" alt="python1">
+                      </div>
+                      <div class="carousel-item">
+                         <img src="slajder2.png" class="d-block w-100" alt="python2">
+                      </div>
+                      <div class="carousel-item">
+                         <img src="slajder3.png" class="d-block w-100" alt="python3">
+                      </div>
+                      <div class="carousel-item">
+                         <img src="slajder4.png" class="d-block w-100" alt="java1">
+                      </div>
+                      <div class="carousel-item">
+                         <img src="slajder5.png" class="d-block w-100" alt="java2">
+                      </div>
+                      <div class="carousel-item">
+                         <img src="slajder6.png" class="d-block w-100" alt="java3">
+                      </div>
+                  </div>
+                <br id="menu">
+               </div>
+                <div class="container">
+                    <div class="row">
+                        <hr class="bg-dark mx-4">
+                    </div>
+                    <br>
+                    <h1>Menu</h1>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#C">
+                                <div class="card text-white bg-dark mb-3 btn menu przycisk">
+                                    <div class="card-body">
+                                        <h4 class="card-title">C++</h4>
+                                        <hr style="background-color: rgb(18,18,18);">
+                                        <p class="card-text">Dowiedz się o najbardziej znanym języku programowania.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#P">
+                                <div class="card text-white bg-dark mb-3 btn menu przycisk">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Python</h4>
+                                        <hr style="background-color: rgb(18,18,18);">
+                                        <p class="card-text">Odkryj najszybciej podbijający rynek język.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#J">
+                                <div class="card text-white bg-dark mb-3 btn menu przycisk">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Java</h4>
+                                        <hr style="background-color: rgb(18,18,18);">
+                                        <p class="card-text">Poznaj jeden z najbardziej rozbudowanych języków.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#tool">
+                                <div class="card text-white bg-dark mb-3 btn menu przycisk">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Przydatne narzędzia</h4>
+                                        <hr style="background-color: rgb(18,18,18);">
+                                        <p class="card-text">Zobacz przydatne narzędzia do tworzenia multimediów.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#film">
+                                <div class="card text-white bg-dark mb-3 btn menu przycisk">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Github</h4>
+                                        <hr style="background-color: rgb(18,18,18);">
+                                        <p class="card-text">Jak budować projekt z narzędziem Github?</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#dod">
+                                <div class="card text-white bg-dark mb-3 btn menu przycisk">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Materiały dodatkowe</h4>
+                                        <hr style="background-color: rgb(18,18,18);">
+                                        <p class="card-text" id="C">Co warto przeczytać by stać się programistą z górnej półki?</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr class="bg-dark mx-4"  id="C">
+                    </div>
+                </div>
+<!-- Koniec kart-->
+                <div class="container artykuly">
+<!-- pierwszy artykuł -->
+                    <h1 class="naglowki">C++</h1>
+                    <p class="tekst bg-dark" onclick="playSound('c.mp3')">Jeden z najpopularniejszych jezyków programowania. Wywodzi się bezpośrednio z języka C. Jest określany jako niskopoziomowy, co utrudnia pisanie aplikacji, ale znacznie zwiększa możliwości programistyczne.</p>
+                    <h5 class="naglowki">Zastosowanie</h5>
+                    <p class="tekst bg-dark" onclick="playSound('c_zastosowanie.mp3')">C++ znalazł zastosowanie głównie przy programowaniu aplikacji desktopowych oraz sterowników.</p>
+                    <h5 class="naglowki">Udogodnienia</h5>
+                    <ul class="tekst bg-dark" style="padding-left: 20px;" onclick="playSound('c_udogodnienia.mp3')">
+                        <li>Jezyk kompilowany - oznacza to, że pracuje bardzo szybko, nawet w aplikacjach z dużą ilością wierszy kodu.</li>
+                        <li>Operacje na hardware - możliwość operowania na hardware jest możliwe dzięki wstawkom ASM.</li>
+                        <li>Kompatybilność z C - jest kompatybilny wstecznie z językiem C.</li>
+                    </ul>
+                    <h5 class="naglowki">Dlaczego C++</h5>
+                    <ul class="tekst bg-dark" style="padding-left: 20px;" onclick="playSound('c_dlaczego.mp3')">
+                        <li>Aspekty niskiego poziomu.</li>
+                        <li>Duża liczba bibliotek.</li>
+                    </ul>
+                    <div class="obrazek">
+                        <img src="hellocpp.png" style="width: 100%;">
+                        <p id="P">Program "hello world" napisany w C++</p>
+                    </div>
+                    <div class="row">
+                        <hr class="bg-dark mx-4">
+                        <hr class="bg-dark second-hr">
+                    </div>
+<!-- drugi artykuł -->
+                    <h1 class="naglowki">Python</h1>
+                    <p class="tekst bg-dark" onclick="playSound('p.mp3')">Obecnie najszybciej zyskujący popularność język wysokiego poziomu. Jego ideą jest tworzenie czystego i przejrzystego kodu.</p>
+                    <h5 class="naglowki">Zastosowanie</h5>
+                    <p class="tekst bg-dark" onclick="playSound('p_zastosowanie.mp3')">Python jest językiem ogólnego przeznaczenia. Możemy dzięki niemu tworzyć między innymi skrypty, aplikacje okienkowe, rozwiązania backednowe oraz sztuczną inteligencję. Używany jest głównie do rozwiązań niekomercyjnych.</p>
+                    <h5 class="naglowki">Udogodnienia</h5>
+                    <ul class="tekst bg-dark" style="padding-left: 20px;" onclick="playSound('p_udogodnienia.mp3')">
+                        <li>Składnia - jest stworzona tak, by maksymalnie ułatwić jego czytelność; w kodzie nie występują średniki oraz klamry.</li>
+                        <li>Dynamiczne typowanie - nie trzeba definiować typu zmiennej, gdyż Python sam je dobiera; można je zmieniać w czasie działania programu.</li>
+                    </ul>
+                    <h5 class="naglowki">Dlaczego Python</h5>
+                    <ul class="tekst bg-dark" style="padding-left: 20px;" onclick="playSound('p_dlaczego.mp3')">
+                        <li>Szerokie zastosowanie.</li>
+                        <li>Szybko rosnąca społeczność programistów - możliwość poradzenia się innych.</li>
+                    </ul>
+                    <div class="obrazek">
+                        <img src="hellopython.png" style="width: 100%;">
+                        <p id="J">Program "hello world" napisany w Pythonie</p>
+                    </div>
+                    <div class="row">
+                        <hr class="bg-dark mx-4">
+                        <hr class="bg-dark second-hr">
+                    </div>
+<!-- trzeci artykuł -->
+                    <h1 class="naglowki">Java</h1>
+                    <p class="tekst bg-dark" onclick="playSound('j.mp3')">Jest językiem programowania, stworzonym przez firmę Sun Microsystems w 1995 roku. Obecnym właścicielem jest firma Oracle. Jest językiem szerokiego zastosowania.</p>
+                    <h5 class="naglowki">Zastosowanie</h5>
+                    <p class="tekst bg-dark" onclick="playSound('j_zastosowanie.mp3')">Używany jest do tworzenia aplikacji desktopowych, aplikacji mobilnych oraz rozwiązań backendowych. Do działania wymaga zainstalowania bezpłatnego środowiska Java, który umożliwia uruchomienie programu w dowolnym systemie operacyjnym.</p>
+                    <h5 class="naglowki">Udogodnienia</h5>
+                    <ul class="tekst bg-dark" style="padding-left: 20px;" onclick="playSound('j_udogodnieka.mp3')">
+                        <li>Garbage collector - jest to mechanizm odpowiedzialny za czyszczenie nieużywanych obiektów strefy, czyli pamięci na zarezerwowane obiekty; wirtualna maszyna sama decyduje kiedy wykonać czyszczenie.</li>
+                        <li>WORA - write once, run anywhere - maszyna wirtualna Javy pozwala na uruchomienie programów na dowolnym systemie operacyjnym.</li>
+                    </ul>
+                    <h5 class="naglowki">Dlaczego Java</h5>
+                    <ul class="tekst bg-dark" style="padding-left: 20px;" onclick="playSound('j_dlaczego.mp3')">
+                        <li>Duża społeczność programistów, co ułatwia znalezienie rozwiązań problemów.</li>
+                        <li>Duże zapotrzebowanie na rynku pracy na programistów Java.</li>
+                        <li>Wieloplatformowość.</li>
+                    </ul>
+                    <div class="obrazek">
+                        <img src="hellojava.png" style="width: 100%;">
+                        <p id="tool">Program "hello world" napisany w Javie</p>
+                    </div>
+                    <div class="row">
+                        <hr class="bg-dark mx-4">
+                        <hr class="bg-dark second-hr">
+                    </div>
+<!-- czwarty artykuł -->
+                    <h1 class="naglowki">Przydatne narzędzia</h1>
+                    <p class="bg-dark tekst" onclick="playSound('narzedzia.mp3')">W tym artykule przedstawimy narzędzia, które przydadzą się do tworzenia multimediów dla naszego projektu.</p>
+                    <h1 class="naglowki">GIMP</h1>
+                    <p class="tekst bg-dark" onclick="playSound('gimp.mp3')">GIMP to darmowy program do edycji grafiki rastrowej. Umożliwia rysowanie, dodawanie tekstu i kształtów, wycinanie, eksport plików do innych formatów i wiele więcej.</p>
+                    <div class="obrazek">
+                        <img src="gimp.PNG" style="width: 100%;" alt="gimp">
+                        <p>Interfejs GIMP'a</p>
+                    </div>
+                    <div class="row">
+                        <hr class="bg-dark mx-4">
+                    </div>
+                    <h1 class="naglowki">Inkscape</h1>
+                    <p class="tekst bg-dark" onclick="playSound('inkscaper.mp3')">Inkscape jest darmowym programem do tworzenia grafiki wektorowej. Znacząco ułatwia tworzenie ikon, loga i diagramów.</p>
+                    <div class="obrazek">
+                        <img src="ink.PNG" style="width: 100%;" alt="ink">
+                        <p>Interfejs Inkscape'a</p>
+                    </div>
+                    <div class="row">
+                        <hr class="bg-dark mx-4">
+                    </div>
+                    <h1 class="naglowki">Audacity</h1>
+                    <p class="tekst bg-dark" onclick="playSound('audacity.mp3')">Audacity to darmowy program do obróbki plików audio. Narzędzie zawiera wiele funkcji zarówno do wycinania dźwięku, jak i jego modyfikowania.</p>
+                    <div class="obrazek">
+                        <img src="auda.png" style="width: 100%;" alt="auda">
+                        <p id="film">Interfejs Audacity</p>
+                    </div>
+                    <div class="row">
+                        <hr class="bg-dark mx-4">
+                        <hr class="bg-dark second-hr">
+                    </div>
+<!-- piąty artykuł(film) -->
+                    <h1 class="naglowki">Tu kobryl trza nagrać jakiś film no pls wez no tylko co bo ja nie wiem no co nagrac</h1>
+                    <div class="obrazek">
+<!-- 
+
+Tu film 
+
+-->
+                        filmfilmfilm
+                        <p id="dod">Podpis pod filmem</p>
+                    </div>
+                    <div class="row">
+                        <hr class="bg-dark mx-4">
+                        <hr class="bg-dark second-hr">
+                    </div>
+<!-- szósty artykuł -->
+                    <h1 class="naglowki">Materiały dodatkowe</h1>
+                    <div class="card mb-3 bg-dark" style="width: 100%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="Python.JPG" class="card-img" alt="zdjecie python" style="height: 100%; width: 100%;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Michael Dawson - "Python dla każdego"</h3>
+                                    <p class="card-text">"Python dla każdego" to świetna książka dla osób rozpoczynających przygodę z Pythonem. W przejrzysty sposób prezentuje podstawy programowania obiektowego, tworzenie GUI oraz obsługę biblioteki "Pygame".</p>
+                                    <button type="button" class="btn btn-light"><a href="https://helion.pl/ksiazki/python-dla-kazdego-podstawy-programowania-wydanie-iii-michael-dawson,pytdk3.htm#" target="_blank" class="przycisk" style="color:#343A40">Zobacz więcej</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark" style="width: 100%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="SQl.JPG" class="card-img" alt="zdjecie SQL" style="height: 100%; width: 100%;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Miesięcznik Komputer Świat Ekspert - "Bazy Danych Programowanie w SQL i PHP"</h3>
+                                    <p class="card-text">Większość programistów prędzej czy później natrafi na bazę danych, którą będzie musiał obsłużyć. Z pomocą przyjdzie nam wyżej wymieniona pozycja, która poprowadzi nas przez zagadnienie baz danych.</p>
+                                    <button type="button" class="btn btn-light"><a href="https://www.komputerswiat.pl/aktualne-wydanie/biblioteczka-komputer-swiat-ekspert-62011/gkdnm2j" target="_blank" class="przycisk" style="color:#343A40">Zobacz więcej</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark" style="width: 100%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="JAva.JPG" class="card-img" alt="zdjecie android" style="height: 100%; width: 100%;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Marcin Płonkowski - "Android Studio Tworzenie aplikacji mobilnych"</h3>
+                                    <p class="card-text">Chciałbyś tworzyć aplikacje na Androida? Wystarczy znajomość środowiska Android Studio, które dokładnie opisze Ci książka Marcina Płonkowskiego.</p>
+                                    <button type="button" class="btn btn-light"><a href="https://helion.pl/ksiazki/android-studio-tworzenie-aplikacji-mobilnych-marcin-plonkowski,anstam.htm#format/e" target="_blank" class="przycisk" style="color:#343A40">Zobacz więcej</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr class="bg-dark mx-4">
+                        <hr class="bg-dark second-hr">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <span class="com">
+                <div class="row"><div class="col-sm">Dołącz do społeczności:</div><br></div>
+                <div class="row" style="letter-spacing: 18px;"><div class="col-12"><a class="fa fa-facebook-square fa-2x przycisk" href="https://facebook.com/" target="_blank"></a><a class="fa fa-github-square fa-2x przycisk" href="https://github.com/kobryl/" target="_blank"></a><a class="fa fa-twitter-square fa-2x przycisk" href="https://twitter.com/" target="_blank"></a><a class="fa fa-youtube-play fa-2x przycisk" href="https://youtube.com/" target="_blank"></a></div></div>
+            </span>
+            <span class="copy">&copy; 2020 Łukasz Nowakowski &amp; Konrad Bryłowski</span>
+        </footer>
+        <div class="return"><a class="fa fa-arrow-circle-up fa-4x przycisk" href="#begin"></a></div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script>
+            //powolne opadanie
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+        <script>
+            //dzwieki
+            function playSound(url){
+                new Audio(url).play();
+            }
+        </script>
+        <script>
+            //asystent
+            $(document).ready(function(){
+                $('.toast').toast('show');
+            });
+            var licznik = 1;
+            function powitanie(parametr){
+                licznik = licznik + parametr;
+                switch(licznik){
+                    case 0:
+                        $(document).ready(function(){
+                            $('.toast').toast('show');
+                        });
+                      return false;
+                    break;
+                    case 1:
+                        document.getElementById("powitanie").innerHTML="Użyj przycisków w sekcji 'Menu', by przejść do interesującego Cię artykułu.";
+                    break;
+                    case 2:
+                        document.getElementById("powitanie").innerHTML="By szybko wrócić na górę, wciśnij ikonkę strzałki znajdującej się w prawym dolnym rogu.";
+                    break;
+                    case 3:
+                        document.getElementById("powitanie").innerHTML="Użyj górnego panelu, by przenieść się do menu lub naszych mediów społecznościowych.";
+                    break;
+                    case 4:
+                        document.getElementById("powitanie").innerHTML="Na górze strony, możesz zobaczyć fragmenty kilku naszych projektów.";
+                    break;
+                    case 5:
+                        document.getElementById("powitanie").innerHTML="Mam nadzieję, że nasza strona Ci się spodoba! Jeśli tak, to nie zapomnij odwiedzić nas na naszych mediach społecznościowych.";
+                    break;
+                    case 6:
+                        document.getElementById("powitanie").innerHTML="Jeśli będziesz potrzebował mojej pomocy, kliknij przycisk 'Rozpocznij', który znajdziesz na górnym panelu strony.";
+                        document.getElementById("powitaniePrzycisk").innerHTML="Zakończ";
+                    break;
+                    case 7:
+                        $(document).ready(function(){
+                            $('.toast').toast('hide');
+                        });
+                      return false;
+                    break;
+                    default: break;
+                }
+                licznik++;
+            }
+        </script>
+    </body>
+</html>

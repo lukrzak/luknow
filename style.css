@@ -1,0 +1,115 @@
+header{
+    background-color: black;
+    width: 100vw;
+    height: 100px;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+nav{
+    float: left;
+    text-align: center;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+}
+nav >a:hover{
+    color: #343A40;
+}
+.main{
+    margin-top: 100px;
+    width: 100%;
+    background-color: #121212;
+    height: 100%;
+    color: white
+}
+.kontent{
+   padding: 0;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+body{
+    cursor: url(kursor.png), auto;
+}
+a:hover{
+   text-decoration: none;
+}
+hr {
+   width: 100%;
+}
+footer {
+   background-color: black;
+   height: 6em;
+   color: white;
+   padding-left: .5em;
+}
+.fa {
+   color: white;
+}
+.kunc {
+   margin-bottom: 6em;
+}
+.artykuly > .row {
+   padding: 1vw;
+}
+.tekst{
+    border-style: solid;
+    border-width: 0px;
+    border-left-width: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+    color: white;
+    
+}
+.naglowki{
+    padding-left: 5px;
+}
+.second-hr{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.com > .row {
+   margin-right: 0;
+}
+#begin{
+   height: 0;
+   margin: 0;
+   padding: 0;
+}
+.return {
+   position: fixed;
+   bottom: 5vh;
+   right: 3vw;
+}
+a.fa:hover {
+   color: #343A40;
+}
+.obrazek{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+#slajder {
+   display: flex;
+   align-items: center;
+   height: 50vw;
+}
+.menu {
+   max-width: 23rem;
+   height: 12em
+}
+/*.carousel-inner {
+   display: flex;
+   align-items: center
+}*/
+.helper {
+   position: fixed;
+   right: 5vw;
+   top: 15vh;
+   z-index: 2;
+}
+.przycisk{
+    cursor: url(kursor2.png), auto;
+}

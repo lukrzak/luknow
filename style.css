@@ -113,3 +113,9 @@ a.fa:hover {
 .przycisk{
     cursor: url(kursor2.png), auto;
 }
+button {
+   cursor: url(kursor2.png), auto;
+}
+[type=button]:not(:disabled), button:not(:disabled){
+   cursor: url(kursor2.png), auto;
+}
